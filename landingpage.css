@@ -22,7 +22,7 @@ nav a {
     font-weight: bold;
 }
 .hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('LandingPagePhotos/Cooling-Background-Image.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -51,9 +51,10 @@ nav a {
 .hero p {
     font-size: 1.2em;
     color: #ddd;
+    font-weight: bold;
 }
 .button {
-    background-color: #ffcc00;
+    background-color: #009a44;
     color: #333;
     padding: 10px 20px;
     border: none;
@@ -62,14 +63,18 @@ nav a {
     cursor: pointer;
     margin-top: 20px;
     text-decoration: none;
+    font-weight: bold;
 }
+.button:hover {
+    opacity: 0.8;
+  }
 .section {
     padding: 40px 20px;
     text-align: center;
 }
 .section h2 {
     font-size: 2em;
-    color: #004080;
+    color: #009a44;
 }
 .section p {
     font-size: 1.1em;
@@ -89,11 +94,23 @@ nav a {
     text-align: center;
 }
 .collaboration img, .department img {
-    width: 80px;
-    height: 80px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .collaborations, .departments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collaboration, .department {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
 }
 footer {
-    background-color: #004080;
+    background-color: #1e1e1e;
     color: #fff;
     padding: 20px;
     text-align: center;
