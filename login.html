@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Sign In</h2>
+        </div>
+        <form action="/login" method="post" class="login-form">
+            <input type="text" placeholder="Email / Username" name="uname" required>
+            <input type="password" placeholder="Password" name="psw" required>
+
+            <button type="submit" class="login-button">Sign In</button>
+
+            <div class="login-options">
+                <label class="remember-me">
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+        </form>
+        <div class="login-footer">
+            <p>Don't have an account? <a href="https://www.rjenergysolutions.com/request-a-quote/">Click Here To Request One</a></p>
+        </div>
+    </div>
+</body>
+</html>
